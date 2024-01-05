@@ -6,6 +6,7 @@ public class OrderDTO
 {
     public int Id { get; set; }
     public int CashierId { get; set; }
+    public CashierDTO Cashier { get; set; }
     public DateTime? PaidOnDate { get; set; }
     public List<OrderProductDTO> OrderProducts { get; set; }
     public decimal Total
@@ -13,11 +14,14 @@ public class OrderDTO
         get
         {
             decimal total = 0M;
-
-            foreach(OrderProductDTO OrderProduct in OrderProducts)
+            if (OrderProducts != null)
             {
-                total += OrderProduct.Product.Price * OrderProduct.Quantity;
+                foreach (OrderProductDTO OrderProduct in OrderProducts)
+                {
+                    total += OrderProduct.Product.Price * OrderProduct.Quantity;
+                }
             }
+
             return total;
         }
     }

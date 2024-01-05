@@ -49,21 +49,21 @@ public class CornerStoreDbContext : DbContext
         });
         modelBuilder.Entity<Product>().HasData(new Product[]
  {
-        new Product { Id = 1, ProductName = "Pepsi", Price = 2.00M, Brand = "Pepsi Cola", CategoryId = 2 },
-        new Product { Id = 2, ProductName = "Doritos", Price = 1.50M, Brand = "Frito-Lay", CategoryId = 1 },
-        new Product { Id = 3, ProductName = "Snickers", Price = 1.20M, Brand = "Mars, Incorporated", CategoryId = 3 },
-        new Product { Id = 4, ProductName = "Ice Cream", Price = 3.50M, Brand = "Ben & Jerry's", CategoryId = 4 },
-        new Product { Id = 5, ProductName = "Paper Towels", Price = 2.80M, Brand = "Bounty", CategoryId = 5 },
-        new Product { Id = 6, ProductName = "Shampoo", Price = 4.50M, Brand = "Pantene", CategoryId = 6 },
-        new Product { Id = 7, ProductName = "Baguette", Price = 1.80M, Brand = "Local Bakery", CategoryId = 7 },
-        new Product { Id = 8, ProductName = "Milk", Price = 2.20M, Brand = "Organic Valley", CategoryId = 8 },
-        new Product { Id = 9, ProductName = "Apples", Price = 1.00M, Brand = "Washington Apples", CategoryId = 9 },
-        new Product { Id = 10, ProductName = "Toothpaste", Price = 3.00M, Brand = "Colgate", CategoryId = 10 },
-        new Product { Id = 11, ProductName = "Coca-Cola", Price = 1.80M, Brand = "The Coca-Cola Company", CategoryId = 2 },
-        new Product { Id = 12, ProductName = "Lays", Price = 1.50M, Brand = "Frito-Lay", CategoryId = 1 },
-        new Product { Id = 13, ProductName = "Twix", Price = 1.20M, Brand = "Mars, Incorporated", CategoryId = 3 },
-        new Product { Id = 14, ProductName = "Frozen Pizza", Price = 4.50M, Brand = "DiGiorno", CategoryId = 4 },
-        new Product { Id = 15, ProductName = "Soap", Price = 2.50M, Brand = "Dove", CategoryId = 6 }
+            new Product { Id = 1, ProductName = "Pepsi", Price = 2.00M, Brand = "Pepsi Cola", CategoryId = 2 },
+            new Product { Id = 2, ProductName = "Doritos", Price = 1.50M, Brand = "Frito-Lay", CategoryId = 1 },
+            new Product { Id = 3, ProductName = "Snickers", Price = 1.20M, Brand = "Mars, Incorporated", CategoryId = 3 },
+            new Product { Id = 4, ProductName = "Ice Cream", Price = 3.50M, Brand = "Ben & Jerry's", CategoryId = 4 },
+            new Product { Id = 5, ProductName = "Paper Towels", Price = 2.80M, Brand = "Bounty", CategoryId = 5 },
+            new Product { Id = 6, ProductName = "Shampoo", Price = 4.50M, Brand = "Pantene", CategoryId = 6 },
+            new Product { Id = 7, ProductName = "Baguette", Price = 1.80M, Brand = "Local Bakery", CategoryId = 7 },
+            new Product { Id = 8, ProductName = "Milk", Price = 2.20M, Brand = "Organic Valley", CategoryId = 8 },
+            new Product { Id = 9, ProductName = "Apples", Price = 1.00M, Brand = "Washington Apples", CategoryId = 9 },
+            new Product { Id = 10, ProductName = "Toothpaste", Price = 3.00M, Brand = "Colgate", CategoryId = 10 },
+            new Product { Id = 11, ProductName = "Coca-Cola", Price = 1.80M, Brand = "The Coca-Cola Company", CategoryId = 2 },
+            new Product { Id = 12, ProductName = "Lays", Price = 1.50M, Brand = "Frito-Lay", CategoryId = 1 },
+            new Product { Id = 13, ProductName = "Twix", Price = 1.20M, Brand = "Mars, Incorporated", CategoryId = 3 },
+            new Product { Id = 14, ProductName = "Frozen Pizza", Price = 4.50M, Brand = "DiGiorno", CategoryId = 4 },
+            new Product { Id = 15, ProductName = "Soap", Price = 2.50M, Brand = "Dove", CategoryId = 6 }
  });
 
         modelBuilder.Entity<OrderProduct>().HasData(new OrderProduct[]
